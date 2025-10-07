@@ -16,7 +16,7 @@ StockWise Agent is an intelligent stock analysis system that leverages AI to pro
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/StockWiseAgent.git
+   git clone https://github.com/deepakkvr/StockWise-Agent.git
    cd StockWiseAgent
    ```
 
