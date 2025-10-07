@@ -87,10 +87,4 @@ insights = await system.get_quick_insights("TSLA", "What are the latest trends?"
 - langchain, openai, chromadb
 - yfinance, newsapi-python, praw
 
-## License
 
-[Your License]
-
-## Contributing
-
-[Your contribution guidelines]
