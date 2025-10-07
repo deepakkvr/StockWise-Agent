@@ -1,0 +1,46 @@
+2025-09-29 23:16:07.799 | INFO     | rag.vector_store:_initialize_db:75 - Initialized vector store with collection: stock_insights
+2025-09-29 23:16:07.801 | INFO     | agents.base_agent:__init__:81 - Initialized NewsAnalysisAgent agent with mistral LLM
+2025-09-29 23:16:09.241 | INFO     | agents.base_agent:__init__:81 - Initialized SentimentAnalysisAgent agent with gemini LLM
+2025-09-29 23:16:09.569 | INFO     | agents.base_agent:__init__:81 - Initialized InsightSynthesizerAgent agent with mistral LLM
+2025-09-29 23:16:13.636 | INFO     | agents.orchestrator:__init__:73 - StockAnalysisOrchestrator initialized with all agents
+2025-09-29 23:16:13.661 | INFO     | main:__init__:50 - StockWise System initialized with intelligent agents
+2025-09-29 23:16:13.678 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL, MSFT, GOOGL, AMZN, TSLA, NVDA, META, BRK-B, UNH, JNJ
+2025-09-29 23:18:21.714 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: 
+2025-09-29 23:18:23.987 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL
+2025-09-29 23:18:28.996 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL
+2025-09-29 23:18:29.933 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL
+2025-09-29 23:18:30.362 | INFO     | main:update_stock_data:54 - Updating data for 1 stocks
+2025-09-29 23:18:31.537 | INFO     | main:update_stock_data:63 - Updating data for AAPL
+2025-09-29 23:18:32.045 | INFO     | data.collectors.news_api:get_stock_news:82 - Retrieved 49 articles for AAPL
+2025-09-29 23:18:32.132 | INFO     | main:update_stock_data:87 - Collected 49 news articles for AAPL
+2025-09-29 23:18:32.489 | INFO     | main:update_stock_data:119 - Augmented with 10 Yahoo Finance articles for AAPL
+2025-09-29 23:18:35.260 | INFO     | data.collectors.reddit_collector:get_stock_mentions:79 - Retrieved 12 Reddit posts for AAPL
+2025-09-29 23:18:35.310 | INFO     | main:update_stock_data:141 - Collected 12 Reddit posts for AAPL
+2025-09-29 23:18:35.312 | DEBUG    | main:_store_symbol_data:159 - Storing data for AAPL in vector store
+2025-09-29 23:18:41.587 | INFO     | rag.vector_store:add_news_articles:123 - Added 49 news articles for AAPL
+2025-09-29 23:18:47.707 | INFO     | rag.vector_store:add_reddit_posts:170 - Added 12 Reddit posts for AAPL
+2025-09-29 23:18:47.844 | INFO     | main:update_stock_data:153 - Data update completed
+2025-09-29 23:18:55.450 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL
+2025-09-29 23:18:55.469 | INFO     | main:analyze_multiple_stocks:218 - Starting batch analysis for 1 stocks
+2025-09-29 23:18:55.470 | INFO     | agents.orchestrator:analyze_multiple_stocks:453 - Starting batch analysis for 1 stocks
+2025-09-29 23:18:55.472 | INFO     | agents.orchestrator:analyze_stock:81 - Starting comprehensive analysis for AAPL (ID: analysis_AAPL_20250929_231855)
+2025-09-29 23:18:55.473 | INFO     | agents.orchestrator:_gather_data_sources:160 - Gathering data sources for AAPL
+2025-09-29 23:18:56.250 | INFO     | agents.orchestrator:_gather_data_sources:186 - Gathered 27 articles and 16 social posts for AAPL
+2025-09-29 23:18:56.252 | INFO     | agents.base_agent:submit_task:122 - Task news_analyzer_20250929_231856_252605 submitted to NewsAnalysisAgent agent
+2025-09-29 23:18:56.253 | INFO     | agents.base_agent:submit_task:122 - Task sentiment_analyzer_20250929_231856_253916 submitted to SentimentAnalysisAgent agent
+2025-09-29 23:18:56.255 | INFO     | agents.base_agent:execute_task:136 - Starting task news_analyzer_20250929_231856_252605 in NewsAnalysisAgent agent
+2025-09-29 23:18:56.256 | INFO     | agents.news_agent:process_task:113 - Analyzing 10 articles for AAPL
+2025-09-29 23:18:56.353 | INFO     | agents.base_agent:execute_task:136 - Starting task sentiment_analyzer_20250929_231856_253916 in SentimentAnalysisAgent agent
+2025-09-29 23:19:06.787 | INFO     | agents.base_agent:execute_task:154 - Task news_analyzer_20250929_231856_252605 completed successfully in 10.53s
+2025-09-29 23:19:15.257 | DEBUG    | agents.sentiment_agent:_generate_llm_sentiment_insights:526 - Raw LLM response for sentiment analysis: Based on the provided sentiment data for AAPL, here is a structured analysis:
+
+### 1. Market Psychology
+The consistent "Neutral" sentiment across both traditional news outlets and social media platforms like Reddit indicates a period of market indecision. This pattern suggests a "wait-and-see" psychology among investors, where there is no strong conviction in either a bullish or bearish direction. The lack of emotional extremes points to a market that is digesting information rather than reactin...
+2025-09-29 23:19:15.264 | INFO     | agents.base_agent:execute_task:154 - Task sentiment_analyzer_20250929_231856_253916 completed successfully in 18.91s
+2025-09-29 23:19:15.266 | INFO     | agents.orchestrator:_synthesize_results:371 - Synthesizing results for AAPL
+2025-09-29 23:19:15.268 | INFO     | agents.base_agent:submit_task:122 - Task synthesizer_20250929_231915_268038 submitted to InsightSynthesizerAgent agent
+2025-09-29 23:19:15.269 | INFO     | agents.base_agent:execute_task:136 - Starting task synthesizer_20250929_231915_268038 in InsightSynthesizerAgent agent
+2025-09-29 23:19:26.710 | INFO     | agents.base_agent:execute_task:154 - Task synthesizer_20250929_231915_268038 completed successfully in 11.44s
+2025-09-29 23:19:26.711 | INFO     | agents.orchestrator:analyze_stock:128 - Analysis analysis_AAPL_20250929_231855 completed successfully in 31.24s
+2025-09-29 23:19:26.712 | INFO     | agents.orchestrator:analyze_multiple_stocks:496 - Batch analysis completed: 1/1 successful
+2025-09-29 23:19:26.713 | INFO     | main:analyze_multiple_stocks:229 - Batch analysis completed: 1/1 successful

@@ -1,0 +1,44 @@
+2025-09-29 14:24:08.822 | INFO     | rag.vector_store:_initialize_db:75 - Initialized vector store with collection: stock_insights
+2025-09-29 14:24:08.823 | INFO     | agents.base_agent:__init__:81 - Initialized NewsAnalysisAgent agent with mistral LLM
+2025-09-29 14:24:10.182 | INFO     | agents.base_agent:__init__:81 - Initialized SentimentAnalysisAgent agent with gemini LLM
+2025-09-29 14:24:10.765 | INFO     | agents.base_agent:__init__:81 - Initialized InsightSynthesizerAgent agent with mistral LLM
+2025-09-29 14:24:13.874 | INFO     | agents.orchestrator:__init__:73 - StockAnalysisOrchestrator initialized with all agents
+2025-09-29 14:24:14.069 | INFO     | main:__init__:50 - StockWise System initialized with intelligent agents
+2025-09-29 14:24:14.082 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL, MSFT, GOOGL, AMZN, TSLA, NVDA, META, BRK-B, UNH, JNJ
+2025-09-29 14:24:14.085 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL, MSFT, GOOGL, AMZN, TSLA, NVDA, META, BRK-B, UNH, JNJ
+2025-09-29 14:24:21.519 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: 
+2025-09-29 14:24:37.784 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: TSLA
+2025-09-29 14:24:44.160 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: TSLA
+2025-09-29 14:24:49.858 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: TSLA
+2025-09-29 14:24:49.870 | INFO     | main:update_stock_data:54 - Updating data for 1 stocks
+2025-09-29 14:24:51.642 | INFO     | main:update_stock_data:63 - Updating data for TSLA
+2025-09-29 14:24:52.722 | INFO     | data.collectors.news_api:get_stock_news:82 - Retrieved 49 articles for TSLA
+2025-09-29 14:24:52.794 | INFO     | main:update_stock_data:87 - Collected 49 news articles for TSLA
+2025-09-29 14:24:53.248 | INFO     | main:update_stock_data:119 - Augmented with 10 Yahoo Finance articles for TSLA
+2025-09-29 14:24:56.516 | INFO     | data.collectors.reddit_collector:get_stock_mentions:79 - Retrieved 15 Reddit posts for TSLA
+2025-09-29 14:24:56.553 | INFO     | main:update_stock_data:141 - Collected 15 Reddit posts for TSLA
+2025-09-29 14:24:56.554 | DEBUG    | main:_store_symbol_data:159 - Storing data for TSLA in vector store
+2025-09-29 14:25:01.202 | INFO     | rag.vector_store:add_news_articles:123 - Added 49 news articles for TSLA
+2025-09-29 14:25:04.589 | INFO     | rag.vector_store:add_reddit_posts:170 - Added 15 Reddit posts for TSLA
+2025-09-29 14:25:04.640 | INFO     | main:update_stock_data:153 - Data update completed
+2025-09-29 14:25:07.452 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: TSLA
+2025-09-29 14:25:07.471 | INFO     | main:analyze_multiple_stocks:218 - Starting batch analysis for 1 stocks
+2025-09-29 14:25:07.472 | INFO     | agents.orchestrator:analyze_multiple_stocks:453 - Starting batch analysis for 1 stocks
+2025-09-29 14:25:07.474 | INFO     | agents.orchestrator:analyze_stock:81 - Starting comprehensive analysis for TSLA (ID: analysis_TSLA_20250929_142507)
+2025-09-29 14:25:07.475 | INFO     | agents.orchestrator:_gather_data_sources:160 - Gathering data sources for TSLA
+2025-09-29 14:25:07.777 | INFO     | agents.orchestrator:_gather_data_sources:186 - Gathered 50 articles and 20 social posts for TSLA
+2025-09-29 14:25:07.778 | INFO     | agents.base_agent:submit_task:122 - Task news_analyzer_20250929_142507_778333 submitted to NewsAnalysisAgent agent
+2025-09-29 14:25:07.779 | INFO     | agents.base_agent:submit_task:122 - Task sentiment_analyzer_20250929_142507_779893 submitted to SentimentAnalysisAgent agent
+2025-09-29 14:25:07.780 | INFO     | agents.base_agent:execute_task:136 - Starting task news_analyzer_20250929_142507_778333 in NewsAnalysisAgent agent
+2025-09-29 14:25:07.781 | INFO     | agents.news_agent:process_task:113 - Analyzing 31 articles for TSLA
+2025-09-29 14:25:07.906 | INFO     | agents.base_agent:execute_task:136 - Starting task sentiment_analyzer_20250929_142507_779893 in SentimentAnalysisAgent agent
+2025-09-29 14:25:20.804 | INFO     | agents.base_agent:execute_task:154 - Task news_analyzer_20250929_142507_778333 completed successfully in 13.02s
+2025-09-29 14:25:34.639 | INFO     | agents.base_agent:execute_task:154 - Task sentiment_analyzer_20250929_142507_779893 completed successfully in 26.73s
+2025-09-29 14:25:34.640 | INFO     | agents.orchestrator:_synthesize_results:371 - Synthesizing results for TSLA
+2025-09-29 14:25:34.640 | INFO     | agents.base_agent:submit_task:122 - Task synthesizer_20250929_142534_640829 submitted to InsightSynthesizerAgent agent
+2025-09-29 14:25:34.641 | INFO     | agents.base_agent:execute_task:136 - Starting task synthesizer_20250929_142534_640829 in InsightSynthesizerAgent agent
+2025-09-29 14:25:46.449 | INFO     | agents.base_agent:execute_task:154 - Task synthesizer_20250929_142534_640829 completed successfully in 11.81s
+2025-09-29 14:25:46.449 | INFO     | agents.orchestrator:analyze_stock:128 - Analysis analysis_TSLA_20250929_142507 completed successfully in 38.98s
+2025-09-29 14:25:46.450 | INFO     | agents.orchestrator:analyze_multiple_stocks:496 - Batch analysis completed: 1/1 successful
+2025-09-29 14:25:46.451 | INFO     | main:analyze_multiple_stocks:229 - Batch analysis completed: 1/1 successful
+2025-09-29 14:32:32.892 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL, MSFT, GOOGL, AMZN, TSLA, NVDA, META, BRK-B, UNH, JNJ

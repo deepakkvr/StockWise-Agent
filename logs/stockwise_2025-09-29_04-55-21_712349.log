@@ -1,0 +1,107 @@
+2025-09-29 04:55:47.644 | INFO     | rag.vector_store:_initialize_db:75 - Initialized vector store with collection: stock_insights
+2025-09-29 04:55:47.646 | INFO     | agents.base_agent:__init__:81 - Initialized NewsAnalysisAgent agent with mistral LLM
+2025-09-29 04:55:48.897 | INFO     | agents.base_agent:__init__:81 - Initialized SentimentAnalysisAgent agent with gemini LLM
+2025-09-29 04:55:49.815 | INFO     | agents.base_agent:__init__:81 - Initialized InsightSynthesizerAgent agent with mistral LLM
+2025-09-29 04:55:52.448 | INFO     | agents.orchestrator:__init__:73 - StockAnalysisOrchestrator initialized with all agents
+2025-09-29 04:55:52.451 | INFO     | main:__init__:50 - StockWise System initialized with intelligent agents
+2025-09-29 04:55:52.458 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL, MSFT, GOOGL, AMZN, TSLA, NVDA, META, BRK-B, UNH, JNJ
+2025-09-29 04:56:19.370 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: 
+2025-09-29 04:56:32.567 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: 
+2025-09-29 04:56:39.153 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: GOOGL
+2025-09-29 04:56:42.148 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: GOOGL
+2025-09-29 04:56:42.156 | INFO     | main:analyze_multiple_stocks:218 - Starting batch analysis for 1 stocks
+2025-09-29 04:56:42.157 | INFO     | agents.orchestrator:analyze_multiple_stocks:453 - Starting batch analysis for 1 stocks
+2025-09-29 04:56:42.157 | INFO     | agents.orchestrator:analyze_stock:81 - Starting comprehensive analysis for GOOGL (ID: analysis_GOOGL_20250929_045642)
+2025-09-29 04:56:42.158 | INFO     | agents.orchestrator:_gather_data_sources:160 - Gathering data sources for GOOGL
+2025-09-29 04:56:42.270 | INFO     | agents.orchestrator:_gather_data_sources:186 - Gathered 0 articles and 0 social posts for GOOGL
+2025-09-29 04:56:42.270 | INFO     | agents.orchestrator:analyze_stock:128 - Analysis analysis_GOOGL_20250929_045642 completed successfully in 0.11s
+2025-09-29 04:56:42.271 | INFO     | agents.orchestrator:analyze_multiple_stocks:496 - Batch analysis completed: 1/1 successful
+2025-09-29 04:56:42.271 | INFO     | main:analyze_multiple_stocks:229 - Batch analysis completed: 1/1 successful
+2025-09-29 04:56:58.818 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: GOOGL
+2025-09-29 04:56:58.825 | INFO     | main:analyze_multiple_stocks:218 - Starting batch analysis for 1 stocks
+2025-09-29 04:56:58.826 | INFO     | agents.orchestrator:analyze_multiple_stocks:453 - Starting batch analysis for 1 stocks
+2025-09-29 04:56:58.827 | INFO     | agents.orchestrator:analyze_stock:81 - Starting comprehensive analysis for GOOGL (ID: analysis_GOOGL_20250929_045658)
+2025-09-29 04:56:58.827 | INFO     | agents.orchestrator:_gather_data_sources:160 - Gathering data sources for GOOGL
+2025-09-29 04:56:58.932 | INFO     | agents.orchestrator:_gather_data_sources:186 - Gathered 0 articles and 0 social posts for GOOGL
+2025-09-29 04:56:58.932 | INFO     | agents.orchestrator:analyze_stock:128 - Analysis analysis_GOOGL_20250929_045658 completed successfully in 0.11s
+2025-09-29 04:56:58.932 | INFO     | agents.orchestrator:analyze_multiple_stocks:496 - Batch analysis completed: 1/1 successful
+2025-09-29 04:56:58.933 | INFO     | main:analyze_multiple_stocks:229 - Batch analysis completed: 1/1 successful
+2025-09-29 04:57:45.035 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: GOOGL
+2025-09-29 04:57:45.040 | INFO     | main:update_stock_data:54 - Updating data for 1 stocks
+2025-09-29 04:57:46.489 | INFO     | main:update_stock_data:63 - Updating data for GOOGL
+2025-09-29 04:57:48.192 | INFO     | data.collectors.news_api:get_stock_news:82 - Retrieved 49 articles for GOOGL
+2025-09-29 04:57:48.251 | INFO     | main:update_stock_data:87 - Collected 49 news articles for GOOGL
+2025-09-29 04:57:48.668 | INFO     | main:update_stock_data:119 - Augmented with 10 Yahoo Finance articles for GOOGL
+2025-09-29 04:57:53.542 | INFO     | data.collectors.reddit_collector:get_stock_mentions:79 - Retrieved 59 Reddit posts for GOOGL
+2025-09-29 04:57:53.623 | INFO     | main:update_stock_data:141 - Collected 59 Reddit posts for GOOGL
+2025-09-29 04:57:53.624 | DEBUG    | main:_store_symbol_data:159 - Storing data for GOOGL in vector store
+2025-09-29 04:57:56.502 | INFO     | rag.vector_store:add_news_articles:123 - Added 49 news articles for GOOGL
+2025-09-29 04:58:07.260 | INFO     | rag.vector_store:add_reddit_posts:170 - Added 59 Reddit posts for GOOGL
+2025-09-29 04:58:07.292 | INFO     | main:update_stock_data:153 - Data update completed
+2025-09-29 04:58:11.764 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: GOOGL
+2025-09-29 04:58:11.768 | INFO     | main:analyze_multiple_stocks:218 - Starting batch analysis for 1 stocks
+2025-09-29 04:58:11.768 | INFO     | agents.orchestrator:analyze_multiple_stocks:453 - Starting batch analysis for 1 stocks
+2025-09-29 04:58:11.768 | INFO     | agents.orchestrator:analyze_stock:81 - Starting comprehensive analysis for GOOGL (ID: analysis_GOOGL_20250929_045811)
+2025-09-29 04:58:11.769 | INFO     | agents.orchestrator:_gather_data_sources:160 - Gathering data sources for GOOGL
+2025-09-29 04:58:11.903 | INFO     | agents.orchestrator:_gather_data_sources:186 - Gathered 50 articles and 20 social posts for GOOGL
+2025-09-29 04:58:11.903 | INFO     | agents.base_agent:submit_task:122 - Task news_analyzer_20250929_045811_903614 submitted to NewsAnalysisAgent agent
+2025-09-29 04:58:11.904 | INFO     | agents.base_agent:submit_task:122 - Task sentiment_analyzer_20250929_045811_904253 submitted to SentimentAnalysisAgent agent
+2025-09-29 04:58:11.904 | INFO     | agents.base_agent:execute_task:136 - Starting task news_analyzer_20250929_045811_903614 in NewsAnalysisAgent agent
+2025-09-29 04:58:11.905 | INFO     | agents.news_agent:process_task:113 - Analyzing 7 articles for GOOGL
+2025-09-29 04:58:11.944 | INFO     | agents.base_agent:execute_task:136 - Starting task sentiment_analyzer_20250929_045811_904253 in SentimentAnalysisAgent agent
+2025-09-29 04:58:25.713 | INFO     | agents.base_agent:execute_task:154 - Task news_analyzer_20250929_045811_903614 completed successfully in 13.81s
+2025-09-29 04:58:36.346 | INFO     | agents.base_agent:execute_task:154 - Task sentiment_analyzer_20250929_045811_904253 completed successfully in 24.40s
+2025-09-29 04:58:36.347 | INFO     | agents.orchestrator:_synthesize_results:371 - Synthesizing results for GOOGL
+2025-09-29 04:58:36.348 | INFO     | agents.base_agent:submit_task:122 - Task synthesizer_20250929_045836_348292 submitted to InsightSynthesizerAgent agent
+2025-09-29 04:58:36.349 | INFO     | agents.base_agent:execute_task:136 - Starting task synthesizer_20250929_045836_348292 in InsightSynthesizerAgent agent
+2025-09-29 04:58:36.735 | WARNING  | agents.synthesizer_agent:_generate_synthesis_with_llm:150 - LLM synthesis failed, falling back to templated summary: API error occurred: Status 429
+{"object":"error","message":"Service tier capacity exceeded for this model.","type":"service_tier_capacity_exceeded","param":null,"code":"3505"}
+2025-09-29 04:58:36.736 | INFO     | agents.base_agent:execute_task:154 - Task synthesizer_20250929_045836_348292 completed successfully in 0.39s
+2025-09-29 04:58:36.737 | INFO     | agents.orchestrator:analyze_stock:128 - Analysis analysis_GOOGL_20250929_045811 completed successfully in 24.97s
+2025-09-29 04:58:36.737 | INFO     | agents.orchestrator:analyze_multiple_stocks:496 - Batch analysis completed: 1/1 successful
+2025-09-29 04:58:36.738 | INFO     | main:analyze_multiple_stocks:229 - Batch analysis completed: 1/1 successful
+2025-09-29 05:00:20.066 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL, MSFT, GOOGL, AMZN, TSLA, NVDA, META, BRK-B, UNH, JNJ
+2025-09-29 05:00:31.875 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: GOOGL
+2025-09-29 05:00:31.881 | INFO     | main:analyze_multiple_stocks:218 - Starting batch analysis for 1 stocks
+2025-09-29 05:00:31.881 | INFO     | agents.orchestrator:analyze_multiple_stocks:453 - Starting batch analysis for 1 stocks
+2025-09-29 05:00:31.882 | INFO     | agents.orchestrator:analyze_stock:81 - Starting comprehensive analysis for GOOGL (ID: analysis_GOOGL_20250929_050031)
+2025-09-29 05:00:31.882 | INFO     | agents.orchestrator:_gather_data_sources:160 - Gathering data sources for GOOGL
+2025-09-29 05:00:32.020 | INFO     | agents.orchestrator:_gather_data_sources:186 - Gathered 50 articles and 20 social posts for GOOGL
+2025-09-29 05:00:32.020 | INFO     | agents.base_agent:submit_task:122 - Task news_analyzer_20250929_050032_020793 submitted to NewsAnalysisAgent agent
+2025-09-29 05:00:32.021 | INFO     | agents.base_agent:submit_task:122 - Task sentiment_analyzer_20250929_050032_021365 submitted to SentimentAnalysisAgent agent
+2025-09-29 05:00:32.021 | INFO     | agents.base_agent:execute_task:136 - Starting task news_analyzer_20250929_050032_020793 in NewsAnalysisAgent agent
+2025-09-29 05:00:32.021 | INFO     | agents.news_agent:process_task:113 - Analyzing 7 articles for GOOGL
+2025-09-29 05:00:32.032 | ERROR    | agents.news_agent:_generate_llm_analysis:378 - Error generating LLM analysis: Event loop is closed
+2025-09-29 05:00:32.033 | INFO     | agents.base_agent:execute_task:154 - Task news_analyzer_20250929_050032_020793 completed successfully in 0.01s
+2025-09-29 05:00:32.033 | INFO     | agents.base_agent:execute_task:136 - Starting task sentiment_analyzer_20250929_050032_021365 in SentimentAnalysisAgent agent
+2025-09-29 05:00:32.076 | ERROR    | agents.sentiment_agent:_generate_llm_sentiment_insights:526 - Error generating LLM sentiment insights: Event loop is closed
+2025-09-29 05:00:32.076 | INFO     | agents.base_agent:execute_task:154 - Task sentiment_analyzer_20250929_050032_021365 completed successfully in 0.04s
+2025-09-29 05:00:32.076 | INFO     | agents.orchestrator:_synthesize_results:371 - Synthesizing results for GOOGL
+2025-09-29 05:00:32.077 | INFO     | agents.base_agent:submit_task:122 - Task synthesizer_20250929_050032_077158 submitted to InsightSynthesizerAgent agent
+2025-09-29 05:00:32.077 | INFO     | agents.base_agent:execute_task:136 - Starting task synthesizer_20250929_050032_077158 in InsightSynthesizerAgent agent
+2025-09-29 05:00:32.081 | WARNING  | agents.synthesizer_agent:_generate_synthesis_with_llm:150 - LLM synthesis failed, falling back to templated summary: Event loop is closed
+2025-09-29 05:00:32.082 | INFO     | agents.base_agent:execute_task:154 - Task synthesizer_20250929_050032_077158 completed successfully in 0.00s
+2025-09-29 05:00:32.082 | INFO     | agents.orchestrator:analyze_stock:128 - Analysis analysis_GOOGL_20250929_050031 completed successfully in 0.20s
+2025-09-29 05:00:32.083 | INFO     | agents.orchestrator:analyze_multiple_stocks:496 - Batch analysis completed: 1/1 successful
+2025-09-29 05:00:32.083 | INFO     | main:analyze_multiple_stocks:229 - Batch analysis completed: 1/1 successful
+2025-09-29 05:00:48.713 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: GOOGL
+2025-09-29 05:00:48.719 | INFO     | main:analyze_multiple_stocks:218 - Starting batch analysis for 1 stocks
+2025-09-29 05:00:48.720 | INFO     | agents.orchestrator:analyze_multiple_stocks:453 - Starting batch analysis for 1 stocks
+2025-09-29 05:00:48.721 | INFO     | agents.orchestrator:analyze_stock:81 - Starting comprehensive analysis for GOOGL (ID: analysis_GOOGL_20250929_050048)
+2025-09-29 05:00:48.721 | INFO     | agents.orchestrator:_gather_data_sources:160 - Gathering data sources for GOOGL
+2025-09-29 05:00:48.872 | INFO     | agents.orchestrator:_gather_data_sources:186 - Gathered 50 articles and 20 social posts for GOOGL
+2025-09-29 05:00:48.872 | INFO     | agents.base_agent:submit_task:122 - Task news_analyzer_20250929_050048_872517 submitted to NewsAnalysisAgent agent
+2025-09-29 05:00:48.873 | INFO     | agents.base_agent:submit_task:122 - Task sentiment_analyzer_20250929_050048_873174 submitted to SentimentAnalysisAgent agent
+2025-09-29 05:00:48.873 | INFO     | agents.base_agent:execute_task:136 - Starting task news_analyzer_20250929_050048_872517 in NewsAnalysisAgent agent
+2025-09-29 05:00:48.873 | INFO     | agents.news_agent:process_task:113 - Analyzing 7 articles for GOOGL
+2025-09-29 05:00:48.885 | INFO     | agents.base_agent:execute_task:136 - Starting task sentiment_analyzer_20250929_050048_873174 in SentimentAnalysisAgent agent
+2025-09-29 05:00:48.931 | ERROR    | agents.sentiment_agent:_generate_llm_sentiment_insights:526 - Error generating LLM sentiment insights: Event loop is closed
+2025-09-29 05:00:48.932 | INFO     | agents.base_agent:execute_task:154 - Task sentiment_analyzer_20250929_050048_873174 completed successfully in 0.05s
+2025-09-29 05:00:59.220 | INFO     | agents.base_agent:execute_task:154 - Task news_analyzer_20250929_050048_872517 completed successfully in 10.35s
+2025-09-29 05:00:59.220 | INFO     | agents.orchestrator:_synthesize_results:371 - Synthesizing results for GOOGL
+2025-09-29 05:00:59.221 | INFO     | agents.base_agent:submit_task:122 - Task synthesizer_20250929_050059_221515 submitted to InsightSynthesizerAgent agent
+2025-09-29 05:00:59.221 | INFO     | agents.base_agent:execute_task:136 - Starting task synthesizer_20250929_050059_221515 in InsightSynthesizerAgent agent
+2025-09-29 05:01:08.498 | INFO     | agents.base_agent:execute_task:154 - Task synthesizer_20250929_050059_221515 completed successfully in 9.28s
+2025-09-29 05:01:08.498 | INFO     | agents.orchestrator:analyze_stock:128 - Analysis analysis_GOOGL_20250929_050048 completed successfully in 19.78s
+2025-09-29 05:01:08.499 | INFO     | agents.orchestrator:analyze_multiple_stocks:496 - Batch analysis completed: 1/1 successful
+2025-09-29 05:01:08.499 | INFO     | main:analyze_multiple_stocks:229 - Batch analysis completed: 1/1 successful

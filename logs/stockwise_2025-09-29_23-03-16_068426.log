@@ -1,0 +1,56 @@
+2025-09-29 23:03:56.740 | INFO     | rag.vector_store:_initialize_db:75 - Initialized vector store with collection: stock_insights
+2025-09-29 23:03:56.742 | INFO     | agents.base_agent:__init__:81 - Initialized NewsAnalysisAgent agent with mistral LLM
+2025-09-29 23:03:58.176 | INFO     | agents.base_agent:__init__:81 - Initialized SentimentAnalysisAgent agent with gemini LLM
+2025-09-29 23:03:58.661 | INFO     | agents.base_agent:__init__:81 - Initialized InsightSynthesizerAgent agent with mistral LLM
+2025-09-29 23:04:02.974 | INFO     | agents.orchestrator:__init__:73 - StockAnalysisOrchestrator initialized with all agents
+2025-09-29 23:04:03.112 | INFO     | main:__init__:50 - StockWise System initialized with intelligent agents
+2025-09-29 23:04:03.122 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL, MSFT, GOOGL, AMZN, TSLA, NVDA, META, BRK-B, UNH, JNJ
+2025-09-29 23:04:06.167 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: 
+2025-09-29 23:04:13.956 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL
+2025-09-29 23:04:17.630 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL
+2025-09-29 23:04:17.636 | INFO     | main:update_stock_data:54 - Updating data for 1 stocks
+2025-09-29 23:04:18.791 | INFO     | main:update_stock_data:63 - Updating data for AAPL
+2025-09-29 23:04:19.288 | INFO     | data.collectors.news_api:get_stock_news:82 - Retrieved 49 articles for AAPL
+2025-09-29 23:04:19.365 | INFO     | main:update_stock_data:87 - Collected 49 news articles for AAPL
+2025-09-29 23:04:19.738 | INFO     | main:update_stock_data:119 - Augmented with 10 Yahoo Finance articles for AAPL
+2025-09-29 23:04:22.984 | INFO     | data.collectors.reddit_collector:get_stock_mentions:79 - Retrieved 12 Reddit posts for AAPL
+2025-09-29 23:04:23.035 | INFO     | main:update_stock_data:141 - Collected 12 Reddit posts for AAPL
+2025-09-29 23:04:23.037 | DEBUG    | main:_store_symbol_data:159 - Storing data for AAPL in vector store
+2025-09-29 23:04:29.649 | INFO     | rag.vector_store:add_news_articles:123 - Added 49 news articles for AAPL
+2025-09-29 23:04:35.895 | INFO     | rag.vector_store:add_reddit_posts:170 - Added 12 Reddit posts for AAPL
+2025-09-29 23:04:36.009 | INFO     | main:update_stock_data:153 - Data update completed
+2025-09-29 23:04:55.300 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL
+2025-09-29 23:04:55.327 | INFO     | main:get_quick_insights:290 - Getting quick insights for AAPL
+2025-09-29 23:07:21.887 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL
+2025-09-29 23:07:22.784 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL
+2025-09-29 23:07:23.298 | INFO     | main:update_stock_data:54 - Updating data for 1 stocks
+2025-09-29 23:07:24.668 | INFO     | main:update_stock_data:63 - Updating data for AAPL
+2025-09-29 23:07:25.091 | INFO     | data.collectors.news_api:get_stock_news:82 - Retrieved 49 articles for AAPL
+2025-09-29 23:07:25.171 | INFO     | main:update_stock_data:87 - Collected 49 news articles for AAPL
+2025-09-29 23:07:25.763 | INFO     | main:update_stock_data:119 - Augmented with 10 Yahoo Finance articles for AAPL
+2025-09-29 23:07:28.945 | INFO     | data.collectors.reddit_collector:get_stock_mentions:79 - Retrieved 12 Reddit posts for AAPL
+2025-09-29 23:07:28.995 | INFO     | main:update_stock_data:141 - Collected 12 Reddit posts for AAPL
+2025-09-29 23:07:28.997 | DEBUG    | main:_store_symbol_data:159 - Storing data for AAPL in vector store
+2025-09-29 23:07:35.353 | INFO     | rag.vector_store:add_news_articles:123 - Added 49 news articles for AAPL
+2025-09-29 23:07:41.636 | INFO     | rag.vector_store:add_reddit_posts:170 - Added 12 Reddit posts for AAPL
+2025-09-29 23:07:41.717 | INFO     | main:update_stock_data:153 - Data update completed
+2025-09-29 23:07:44.282 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL
+2025-09-29 23:07:44.291 | INFO     | main:analyze_multiple_stocks:218 - Starting batch analysis for 1 stocks
+2025-09-29 23:07:44.292 | INFO     | agents.orchestrator:analyze_multiple_stocks:453 - Starting batch analysis for 1 stocks
+2025-09-29 23:07:44.293 | INFO     | agents.orchestrator:analyze_stock:81 - Starting comprehensive analysis for AAPL (ID: analysis_AAPL_20250929_230744)
+2025-09-29 23:07:44.297 | INFO     | agents.orchestrator:_gather_data_sources:160 - Gathering data sources for AAPL
+2025-09-29 23:07:44.731 | INFO     | agents.orchestrator:_gather_data_sources:186 - Gathered 31 articles and 18 social posts for AAPL
+2025-09-29 23:07:44.733 | INFO     | agents.base_agent:submit_task:122 - Task news_analyzer_20250929_230744_733854 submitted to NewsAnalysisAgent agent
+2025-09-29 23:07:44.735 | INFO     | agents.base_agent:submit_task:122 - Task sentiment_analyzer_20250929_230744_735636 submitted to SentimentAnalysisAgent agent
+2025-09-29 23:07:44.737 | INFO     | agents.base_agent:execute_task:136 - Starting task news_analyzer_20250929_230744_733854 in NewsAnalysisAgent agent
+2025-09-29 23:07:44.739 | INFO     | agents.news_agent:process_task:113 - Analyzing 17 articles for AAPL
+2025-09-29 23:07:44.831 | INFO     | agents.base_agent:execute_task:136 - Starting task sentiment_analyzer_20250929_230744_735636 in SentimentAnalysisAgent agent
+2025-09-29 23:07:58.642 | INFO     | agents.base_agent:execute_task:154 - Task news_analyzer_20250929_230744_733854 completed successfully in 13.91s
+2025-09-29 23:08:09.500 | INFO     | agents.base_agent:execute_task:154 - Task sentiment_analyzer_20250929_230744_735636 completed successfully in 24.67s
+2025-09-29 23:08:09.501 | INFO     | agents.orchestrator:_synthesize_results:371 - Synthesizing results for AAPL
+2025-09-29 23:08:09.501 | INFO     | agents.base_agent:submit_task:122 - Task synthesizer_20250929_230809_501891 submitted to InsightSynthesizerAgent agent
+2025-09-29 23:08:09.502 | INFO     | agents.base_agent:execute_task:136 - Starting task synthesizer_20250929_230809_501891 in InsightSynthesizerAgent agent
+2025-09-29 23:08:21.262 | INFO     | agents.base_agent:execute_task:154 - Task synthesizer_20250929_230809_501891 completed successfully in 11.76s
+2025-09-29 23:08:21.263 | INFO     | agents.orchestrator:analyze_stock:128 - Analysis analysis_AAPL_20250929_230744 completed successfully in 36.97s
+2025-09-29 23:08:21.264 | INFO     | agents.orchestrator:analyze_multiple_stocks:496 - Batch analysis completed: 1/1 successful
+2025-09-29 23:08:21.264 | INFO     | main:analyze_multiple_stocks:229 - Batch analysis completed: 1/1 successful

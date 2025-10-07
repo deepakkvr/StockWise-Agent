@@ -1,0 +1,10 @@
+2025-09-30 00:42:29.468 | INFO     | rag.vector_store:_initialize_db:75 - Initialized vector store with collection: stock_insights
+2025-09-30 00:42:29.472 | INFO     | agents.base_agent:__init__:81 - Initialized NewsAnalysisAgent agent with mistral LLM
+2025-09-30 00:42:31.022 | INFO     | agents.base_agent:__init__:81 - Initialized SentimentAnalysisAgent agent with gemini LLM
+2025-09-30 00:42:31.328 | INFO     | agents.base_agent:__init__:81 - Initialized InsightSynthesizerAgent agent with mistral LLM
+2025-09-30 00:42:35.723 | INFO     | agents.orchestrator:__init__:73 - StockAnalysisOrchestrator initialized with all agents
+2025-09-30 00:42:35.870 | INFO     | main:__init__:50 - StockWise System initialized with intelligent agents
+2025-09-30 00:42:35.893 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL, MSFT, GOOGL, AMZN, TSLA, NVDA, META, BRK-B, UNH, JNJ
+2025-09-30 00:42:41.095 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: MSFT, GOOGL, AMZN, TSLA, NVDA, META, BRK-B, UNH, JNJ
+2025-09-30 00:42:54.373 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: MSFT, GOOGL, AMZN, TSLA, META, BRK-B, UNH, JNJ
+2025-09-30 09:44:52.981 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: 

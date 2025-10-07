@@ -1,0 +1,47 @@
+2025-09-29 14:35:07.171 | INFO     | rag.vector_store:_initialize_db:75 - Initialized vector store with collection: stock_insights
+2025-09-29 14:35:07.173 | INFO     | agents.base_agent:__init__:81 - Initialized NewsAnalysisAgent agent with mistral LLM
+2025-09-29 14:35:08.556 | INFO     | agents.base_agent:__init__:81 - Initialized SentimentAnalysisAgent agent with gemini LLM
+2025-09-29 14:35:10.389 | INFO     | agents.base_agent:__init__:81 - Initialized InsightSynthesizerAgent agent with mistral LLM
+2025-09-29 14:35:13.336 | INFO     | agents.orchestrator:__init__:73 - StockAnalysisOrchestrator initialized with all agents
+2025-09-29 14:35:13.340 | INFO     | main:__init__:50 - StockWise System initialized with intelligent agents
+2025-09-29 14:35:13.352 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL, MSFT, GOOGL, AMZN, TSLA, NVDA, META, BRK-B, UNH, JNJ
+2025-09-29 14:35:23.461 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: AAPL, MSFT, GOOGL, AMZN, TSLA, NVDA, META, UNH, JNJ
+2025-09-29 14:35:23.562 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: 
+2025-09-29 14:35:28.756 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: META
+2025-09-29 14:37:11.689 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: META
+2025-09-29 14:37:23.368 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: META
+2025-09-29 14:37:23.381 | INFO     | main:update_stock_data:54 - Updating data for 1 stocks
+2025-09-29 14:37:25.008 | INFO     | main:update_stock_data:63 - Updating data for META
+2025-09-29 14:37:25.579 | INFO     | data.collectors.news_api:get_stock_news:82 - Retrieved 49 articles for META
+2025-09-29 14:37:25.655 | INFO     | main:update_stock_data:87 - Collected 49 news articles for META
+2025-09-29 14:37:26.175 | INFO     | main:update_stock_data:119 - Augmented with 10 Yahoo Finance articles for META
+2025-09-29 14:37:29.684 | INFO     | data.collectors.reddit_collector:get_stock_mentions:79 - Retrieved 16 Reddit posts for META
+2025-09-29 14:37:29.803 | INFO     | main:update_stock_data:141 - Collected 16 Reddit posts for META
+2025-09-29 14:37:29.805 | DEBUG    | main:_store_symbol_data:159 - Storing data for META in vector store
+2025-09-29 14:37:34.219 | INFO     | rag.vector_store:add_news_articles:123 - Added 49 news articles for META
+2025-09-29 14:37:39.718 | INFO     | rag.vector_store:add_reddit_posts:170 - Added 16 Reddit posts for META
+2025-09-29 14:37:39.783 | INFO     | main:update_stock_data:153 - Data update completed
+2025-09-29 14:38:04.839 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: META
+2025-09-29 14:38:35.495 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: META
+2025-09-29 14:38:35.520 | INFO     | main:get_quick_insights:290 - Getting quick insights for META
+2025-09-29 14:42:07.475 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: META
+2025-09-29 14:42:12.363 | INFO     | rag.retrieval_system:set_symbols:89 - Updated tracked symbols: META
+2025-09-29 14:42:12.376 | INFO     | main:analyze_multiple_stocks:218 - Starting batch analysis for 1 stocks
+2025-09-29 14:42:12.376 | INFO     | agents.orchestrator:analyze_multiple_stocks:453 - Starting batch analysis for 1 stocks
+2025-09-29 14:42:12.377 | INFO     | agents.orchestrator:analyze_stock:81 - Starting comprehensive analysis for META (ID: analysis_META_20250929_144212)
+2025-09-29 14:42:12.378 | INFO     | agents.orchestrator:_gather_data_sources:160 - Gathering data sources for META
+2025-09-29 14:42:12.704 | INFO     | agents.orchestrator:_gather_data_sources:186 - Gathered 50 articles and 20 social posts for META
+2025-09-29 14:42:12.705 | INFO     | agents.base_agent:submit_task:122 - Task news_analyzer_20250929_144212_705783 submitted to NewsAnalysisAgent agent
+2025-09-29 14:42:12.707 | INFO     | agents.base_agent:submit_task:122 - Task sentiment_analyzer_20250929_144212_707563 submitted to SentimentAnalysisAgent agent
+2025-09-29 14:42:12.708 | INFO     | agents.base_agent:execute_task:136 - Starting task news_analyzer_20250929_144212_705783 in NewsAnalysisAgent agent
+2025-09-29 14:42:12.709 | INFO     | agents.news_agent:process_task:113 - Analyzing 29 articles for META
+2025-09-29 14:42:12.780 | INFO     | agents.base_agent:execute_task:136 - Starting task sentiment_analyzer_20250929_144212_707563 in SentimentAnalysisAgent agent
+2025-09-29 14:42:24.239 | INFO     | agents.base_agent:execute_task:154 - Task news_analyzer_20250929_144212_705783 completed successfully in 11.53s
+2025-09-29 14:42:37.341 | INFO     | agents.base_agent:execute_task:154 - Task sentiment_analyzer_20250929_144212_707563 completed successfully in 24.56s
+2025-09-29 14:42:37.342 | INFO     | agents.orchestrator:_synthesize_results:371 - Synthesizing results for META
+2025-09-29 14:42:37.343 | INFO     | agents.base_agent:submit_task:122 - Task synthesizer_20250929_144237_343546 submitted to InsightSynthesizerAgent agent
+2025-09-29 14:42:37.344 | INFO     | agents.base_agent:execute_task:136 - Starting task synthesizer_20250929_144237_343546 in InsightSynthesizerAgent agent
+2025-09-29 14:42:46.724 | INFO     | agents.base_agent:execute_task:154 - Task synthesizer_20250929_144237_343546 completed successfully in 9.38s
+2025-09-29 14:42:46.725 | INFO     | agents.orchestrator:analyze_stock:128 - Analysis analysis_META_20250929_144212 completed successfully in 34.35s
+2025-09-29 14:42:46.726 | INFO     | agents.orchestrator:analyze_multiple_stocks:496 - Batch analysis completed: 1/1 successful
+2025-09-29 14:42:46.727 | INFO     | main:analyze_multiple_stocks:229 - Batch analysis completed: 1/1 successful
